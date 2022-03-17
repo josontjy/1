@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="_[0h,^(ueux7oRNzDTW[">Player</variable><variable type="KIND_SpriteKind" id="JTs^Vn8O]KmREfCzP!F2">Projectile</variable><variable type="KIND_SpriteKind" id="x3#vj2h~J{#c-H$3#bxK">Food</variable><variable type="KIND_SpriteKind" id="zXke#H@Yds_Zv6Z1p2ng">Enemy</variable><variable id="?11e8YI4JcP|EGs,T5Kj">mySprite</variable><variable id="PA^b-Y+xASCycT([*lI:">item</variable><variable id="R_QaL-n#Q[WT]+J#2Eqo">勇士</variable><variable id="bXwH-gq^qICm*?d$#mY;">对手</variable></variables><block type="pxt-on-start" id="h$1MxtK$`0bSA%^0KZT+" x="0" y="0"><statement name="HANDLER"><block type="set_current_tilemap" id="YM^b+%b(J3,RkM^D2OgO"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="gWIY_x(W.qqMnaen7^xV"><field name="tilemap">tilemap`级别1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"级别1"}}</data></shadow></value><next><block type="variables_set" id="SQ({xwgi3)+E/Bi2guoP"><field name="VAR" id="R_QaL-n#Q[WT]+J#2Eqo">勇士</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="v@b$2~7.@0xv+mW+P!Az"><value name="img"><shadow type="screen_image_picker" id="ZkKJQK]tRT2}Sn_XWYP*"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f f f f d d d d d e e f . . 
+. f d d d d f 4 4 4 e e f . . . 
+. f b b b b f 2 2 2 2 f 4 e . . 
+. f b b b b f 2 2 2 2 f d 4 . . 
+. . f c c f 4 5 5 4 4 f 4 4 . . 
+. . . f f f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"ZkKJQK]tRT2}Sn_XWYP*"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="]Wp~9L[a@wUlOLt*BWE+"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="}=l7jbMWWXFu=+l|YpL("><field name="VAR" id="bXwH-gq^qICm*?d$#mY;">对手</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="}IfQH-LpAJ!w$hJ(U0d?"><value name="img"><shadow type="screen_image_picker" id="a=dWjWkny^5B_U%?Ejv="><field name="img">img`
+. . . . . f f 4 4 f f . . . . . 
+. . . . f 5 4 5 5 4 5 f . . . . 
+. . . f e 4 5 5 5 5 4 e f . . . 
+. . f b 3 e 4 4 4 4 e 3 b f . . 
+. . f 3 3 3 3 3 3 3 3 3 3 f . . 
+. f 3 3 e b 3 e e 3 b e 3 3 f . 
+. f 3 3 f f e e e e f f 3 3 f . 
+. f b b f b f e e f b f b b f . 
+. f b b e 1 f 4 4 f 1 e b b f . 
+f f b b f 4 4 4 4 4 4 f b b f f 
+f b b f f f e e e e f f f b b f 
+. f e e f b d d d d b f e e f . 
+. . e 4 c d d d d d d c 4 e . . 
+. . e f b d b d b d b b f e . . 
+. . . f f 1 d 1 d 1 d f f . . . 
+. . . . . f f b b f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"a=dWjWkny^5B_U%?Ejv="}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="(CtE*xNj~?),o|128tSm"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="+1|Un{+G[q_FKYiW(GeK"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="+S^kkdxvZkK!+Tq~~(NM"><field name="VAR" id="R_QaL-n#Q[WT]+J#2Eqo">勇士</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="U57(),d0Wb4600pS:n`j"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="F[!V#j]KN6}50boAM0@J"><field name="speed">100</field></shadow></value><next><block type="ctrlgame_control_sprite" id="VIU*aE(`FCp6@V[gXXUb"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="controller">controller.player2</field><value name="sprite"><block type="variables_get" id="h*5bpN*X^L%U1Ei!+*y="><field name="VAR" id="bXwH-gq^qICm*?d$#mY;">对手</field></block></value><next><block type="camerafollow" id="cx[@6+Upu_K+(6Ok.*0*"><value name="sprite"><block type="variables_get" id="!.FEA#(Z(B2B|]Nm5FXa"><field name="VAR" id="R_QaL-n#Q[WT]+J#2Eqo">勇士</field></block></value></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
